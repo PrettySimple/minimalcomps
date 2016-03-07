@@ -130,7 +130,7 @@ package com.bit101.components
             var offset:int = _scrollbar.value;
             var numItems:int = Math.ceil(_height / _listItemHeight);
 			numItems = Math.min(numItems, _items.length);
-            for(var i:int = 0; i < numItems; i++)
+            for(var i:int = 0; i < _itemHolder.numChildren; i++)
             {
                 var item:ListItem = _itemHolder.getChildAt(i) as ListItem;
 				if(offset + i < _items.length)
